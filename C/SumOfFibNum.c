@@ -25,7 +25,7 @@ void printBinary(char *msg, int n) {
         for (i = 31; (i >= 0) && ! (n >> i); i--);
         while (i >= 0) {        
             d = n >> i--;
-            binaryBuf[j++] = ((d & 1) ? 1 : 0) + '0';
+            binaryBuf[j++] = (d & 1)  + '0';
         }
         binaryBuf[j] = '\0';
         printf("%s %s\n", msg, (j ==0) ? "0" : binaryBuf);
