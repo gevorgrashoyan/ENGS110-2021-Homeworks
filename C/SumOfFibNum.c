@@ -31,7 +31,6 @@ void printBinary(char *msg, int n) {
         printf("%s %s\n", msg, (j ==0) ? "0" : binaryBuf);
 }
 
-
 int main ()
 {
    int n, sum;
